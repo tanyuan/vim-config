@@ -37,6 +37,18 @@ nmap ; :
 " Space to switch to next buffer
 nmap <space> :bn<CR>
 
+" Move cursor by display lines when wrapping
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+vnoremap <Down> gj
+vnoremap <Up> gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
+
 " Hightlight search
 set hlsearch
 " Toggle highlight search by Ctrl+h
