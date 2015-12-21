@@ -1,6 +1,6 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/tanyuan/dsnp/hw1/p1'
-let g:netrw_dirhist_2='/home/tanyuan/dsnp/hw1/p2'
-let g:netrw_dirhist_3='/home/tanyuan/dsnp/hw1/p1'
-let g:netrw_dirhist_4='/home/tanyuan/dsnp/hw1/p3'
+let g:netrw_dirhist_1='/home/tanyuan'
+let g:netrw_dirhist_2='/home/tanyuan/.adobe'
+let g:netrw_dirhist_3='/home/tanyuan'
+let g:netrw_dirhist_4='/home/tanyuan/cardboard-drone'
