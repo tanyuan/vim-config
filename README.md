@@ -1,6 +1,6 @@
 # Tanyuan's Vim
 
-Vim is a code editor from the old days.
+[Vim](http://www.vim.org/) is a code editor from the old days.
 
 ![Vim Screenshot](screenshot.png)
 
@@ -24,10 +24,13 @@ However, if you like to know my workspace, these are what I work with.
 
 - Operating System: [Arch Linux](https://www.archlinux.org/)
 - Desktop Environment: GNOME
-- Terminal Emulator: Gnome Terminal
-- Theme: [Arc Theme](https://github.com/horst3180/Arc-theme)
+- Terminal Emulator: GNOME Terminal
+- GTK+ Theme: [Arc Theme](https://github.com/horst3180/Arc-theme) (best with `monokai-arc`)
+- Terminal font: [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
 
-I also had `vim-gnome` installed for better GNOME integration.
+I also had `vim-gnome` installed for better GNOME integration. For more information on Vim packages on Arch Linux, see [Arch Linux Wiki](https://wiki.archlinux.org/index.php/Vim)
+
+[Ranger](http://ranger.nongnu.org/) is a nice console file manager with Vim-like key binding. You would feel like home with everything Vim-like. Though Vim has its file browser, Ranger is better for leisure file browsing.
 
 Note: `monokai-arc` theme designed for Arc Theme.
 
