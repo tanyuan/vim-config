@@ -10,7 +10,7 @@ I was born in a graphical user interface age and Vim is really a new way of thin
 
 The configuration (settings) of my Vim is actually very simple. Except for theme that I use Monokai (default theme in Sublime Text), there are no fancy status bars and split window plugins around. I like Vim for its modest visual appearance. Vim does not tell you to do anything, thus you will think what you need to do for yourself. It is like making a friend.
 
-My settings are mainly for me to work more smoothly in subtle ways. Like `Space` to quickly switch in buffers and `Tab` to quickly switch in split windows. And the greatest of all is to map `;` to `:` to trigger Command Mode in a single key stroke on modern keyboards.
+My settings are mainly for me to work more smoothly in subtle ways. `Space` to quickly switch in buffers. `Backspace` to quickly switch in split windows. `Ctrl+/` to comment out codes. And the greatest of all is to map `;` to `:` to trigger Command Mode in a single key stroke on modern keyboards.
 
 By the way, I map `Caps Lock` to `Esc` in my operating system.
 

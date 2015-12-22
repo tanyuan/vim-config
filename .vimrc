@@ -52,17 +52,16 @@ inoremap <Up> <C-o>gk
 " Hightlight search
 set hlsearch
 " Toggle highlight search by Ctrl+h
-nmap <leader>h :set hlsearch!<CR>
+nmap <Leader>h :set hlsearch!<CR>
 
-" Toggle comment by Ctrl+c
-map <C-c> <plug>NERDCommenterToggle
+" Toggle comment by Ctrl+/
+map <C-_> <plug>NERDCommenterToggle
 
 " Use tab key to switch windows
-set autochdir
-map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
+map <Backspace> <C-W>W:cd %:p:h<CR>:<CR>
 
 " Space to switch to next buffer
-nmap <space> :bn<CR>
+nmap <Space> :bn<CR>
 
 " Remember last cursor position
 augroup resCur
