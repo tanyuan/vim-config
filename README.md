@@ -6,15 +6,13 @@
 
 ## Philosophy
 
-I was born in a graphical user interface age and Vim is really a new way of thinking for me. The Normal Mode and Insert Mode is nothing I have ever thought of. That is what makes Vim so different and attractive. You navigate codes with sequential key strokes, not the shortcut that you have to press several keys simultaneously. It feels more natural. It feels more like talking.
+I was born in a graphical user interface age and Vim is really a new way of thinking for me. The Normal Mode and Insert Mode is nothing I have ever thought of. That is what makes Vim so different and attractive. You navigate codes with sequential key strokes, not the shortcut that you have to press several keys simultaneously (chord). It feels more natural. It feels more like talking.
 
 The configuration (settings) of my Vim is actually very simple. Except for theme that I use Monokai (default theme in Sublime Text), there are no fancy status bars and split window plugins around. I like Vim for its modest visual appearance. Vim does not tell you to do anything, thus you will think what you need to do for yourself. It is like making a friend.
 
-My settings are mainly for me to work more smoothly in subtle ways. `Space` to quickly switch in buffers. `Backspace` to quickly switch in split windows. `Ctrl+/` to comment out codes. And the greatest of all is to map `;` to `:` to trigger Command Mode in a single key stroke on modern keyboards.
+My settings are mainly to work more smoothly in subtle ways. To keep important keys close to reach, I map `Caps Lock` to `Ctrl` in my operating system and map `Tab` to `Esc` in Vim. (This is the [original keyboard layout](https://en.wikipedia.org/wiki/File:KB_Terminal_ADM3A.svg) back in time when Vi is designed) `Space` to quickly switch in buffers. And the greatest of all, mapping `;` to `:` to trigger Command Mode in a single key stroke on modern keyboards.
 
-By the way, I map `Caps Lock` to `Esc` in my operating system.
-
-For first time user, run `vimtutor` command to learn by doing. For place to learn more, search [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki) for nice tutorials and advice.
+For first time users, run `vimtutor` command to learn by doing. For place to learn more, search [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki) for nice tutorials and advice.
 
 ## Environment
 

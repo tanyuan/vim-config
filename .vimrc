@@ -13,6 +13,9 @@ set number
 " Enable switching buffers with unsaved changes
 set hidden
 
+" Hightlight search
+set hlsearch
+
 " Use mouse to scroll and select
 set mouse=a
 
@@ -28,40 +31,63 @@ set expandtab " Use spaces instead of tabs
 set tabstop=4 " Number of spaces inserted when tab is pressed
 set shiftwidth=4 " Number of spaces for indentation
 set softtabstop=4 " Makes backspace treat 4 spaces like a tab 
-" Toggle Tab/Space by Ctrl+t
-nmap <leader>t :set expandtab!<CR>
 
-" Single tap to trigger command-line
-nmap ; :
-vmap ; :
-" Single tap to trigger register
-nmap ' "
+" ESCAPE KEY
+" =================================
+" Map Tab to Esc
+nnoremap <Tab> <Esc>
+vnoremap <Tab> <Esc>gV
+onoremap <Tab> <Esc>
+inoremap <Tab> <Esc>`^
+" You can avoid tabs by using indents :
+"   Normal Mode : <<, >> 
+"   Insert Mode : Ctrl-d, Ctrl-t 
+" Insert tab by \tab in Insert Mode
+inoremap <Leader><Tab> <Tab>
 
+" MOVING KEY
+" =================================
 " Move cursor by display lines when wrapping
 nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
-nnoremap <Down> gj
-nnoremap <Up> gk
-vnoremap <Down> gj
-vnoremap <Up> gk
-inoremap <Down> <C-o>gj
-inoremap <Up> <C-o>gk
 
-" Hightlight search
-set hlsearch
-" Toggle highlight search by Ctrl+h
-nmap <Leader>h :set hlsearch!<CR>
+" AVOID SHIFT KEY
+" =================================
+" Single tap to trigger command-line
+nmap ; :
+vmap ; :
+" Single tap to trigger register
+nmap ' "
+" Single tap to trigger moving by paragraphs 
+nmap [ {
+nmap ] }
+vmap [ {
+vmap ] }
 
-" Toggle comment by Ctrl+/
-map <C-_> <plug>NERDCommenterToggle
-
-" Use tab key to switch windows
-map <Backspace> <C-W>W:cd %:p:h<CR>:<CR>
-
+" SPECIAL KEY
+" =================================
 " Space to switch to next buffer
 nmap <Space> :bn<CR>
+
+" CTRL KEY
+" =================================
+" Caps Lock is mapped to Ctrl in OS
+" Toggle comment by Ctrl+/
+map <C-_> <plug>NERDCommenterToggle
+" Use Ctrl+hjkl to switch windows
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" LEADER KEY
+" =================================
+" Toggle Tab/Space by Ctrl+t
+nmap <leader>t :set expandtab!<CR>
+" Toggle highlight search by Ctrl+h
+nmap <Leader>h :set hlsearch!<CR>
 
 " Remember last cursor position
 augroup resCur
