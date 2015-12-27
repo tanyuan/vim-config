@@ -7,6 +7,9 @@ syntax on
 " Use color scheme from ~/.vim/color/
 colorscheme monokai-arc
 
+" Show the keystrokes being entered in the screen
+set showcmd
+
 " Show line numbers
 set number
 
@@ -60,16 +63,18 @@ nmap ; :
 vmap ; :
 " Single tap to trigger register
 nmap ' "
-" Single tap to trigger moving by paragraphs 
-nmap [ {
-nmap ] }
-vmap [ {
-vmap ] }
 
 " SPECIAL KEY
 " =================================
 " Space to switch to next buffer
 nmap <Space> :bn<CR>
+
+" Use [[ ]] to go to previous/next function in C/C++
+"   with brackets {} not starting at first column
+map [[ ?{<CR>w99[{
+map ][ /}<CR>b99]}
+map ]] j0[[%/{<CR>
+map [] k$][%?}<CR>
 
 " CTRL KEY
 " =================================
