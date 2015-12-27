@@ -39,9 +39,9 @@ The folder contains several subfolders:
 - **indent**: language indent rules.
     - css.vim: Better indentation for CSS.
 - **plugin**: plugins.
-    - [NERD\_commenter](http://www.vim.org/scripts/script.php?script_id=1218): Easy commenting by `<Leader>c<Space>` which I map to `Ctrl-/` in `.vimrc`.
+    - [NERD\_commenter](http://www.vim.org/scripts/script.php?script_id=1218): Easy commenting by `<Leader>c<Space>`. I map it to `Ctrl-/` in `.vimrc`.
     - [AutoClose](http://www.vim.org/scripts/script.php?script_id=1849): Automatic add corresponding closing brace when typing `(` `[` `{`. Jump out of nested braces by typing `)`.
-- **syntax**: language syntax hightlighting.
+- **syntax**: language syntax highlighting.
     - c.vim/cpp.vim: function highlighting for C/C++.
     - gnuplot.vim: syntax highlighting for gnuplot files
 
@@ -63,7 +63,7 @@ Don't move in Insert Mode and always tap `Esc` to go Normal Mode right away afte
 
 There aren't only `h`, `j`, `k`, `l` to move around to replace arrow keys. You have a lot more ways to move! If you are holding down a key to reach some place, there may exist some better way with less keystrokes.
 
-`w` (word), `b` (backward) to move forward and backword by small word. `W`, `B` by larger word segmented by whitespaces. `e`, `E` (end) move at the last letter of the word, which is good for `a` (sppend) to insert letters after the word.
+`w` (word), `b` (backward) to move forward and backward by small word. `W`, `B` by larger word segmented by whitespaces. `e`, `E` (end) move at the last letter of the word, which is good for `a` (append) to insert letters after the word.
 
 `{` and `}` to move by paragraphs (segmented by blank lines) is a quick way to scroll.
 
@@ -111,7 +111,7 @@ I like buffers more than tabs for buffers don't take up screen space, leaving th
 
 `:ls` to list current buffers.
 
-`:bn` to switch to the next buffer. (I map `<Space>` to this enabling super fast switching)
+`:bn` to switch to the next buffer. (I map `Space` to this enabling super fast switching)
 
 Read [Vim Tab Madness. Buffers vs Tabs](https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/) for more.
 
@@ -145,9 +145,9 @@ You can set marks (bookmarks) at any place by the name of a to z like registers.
 
 ### Show tabs
 
-`set list` to show all invisible characters.
+`:set list` to show all invisible characters.
 
-`set list!` to hide them.
+`:set list!` to hide them.
 
 ### Autocomplete word
 
