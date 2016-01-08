@@ -45,8 +45,6 @@ inoremap <Tab> <Esc>`^
 " You can avoid tabs by using indents :
 "   Normal Mode : <<, >> 
 "   Insert Mode : Ctrl-d, Ctrl-t 
-" Insert tab by \tab in Insert Mode
-inoremap <Leader><Tab> <Tab>
 
 " MOVING KEY
 " =================================
@@ -89,10 +87,15 @@ map <C-l> <C-w>l
 
 " LEADER KEY
 " =================================
+" Map comma to Leader
+nmap , <Leader>
+vmap , <Leader>
 " Toggle Tab/Space by Ctrl+t
 nmap <leader>t :set expandtab!<CR>
 " Toggle highlight search by Ctrl+h
 nmap <Leader>h :set hlsearch!<CR>
+" Put in new line
+nmap <Leader>p o<Esc>p
 
 " Remember last cursor position
 augroup resCur
