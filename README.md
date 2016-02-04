@@ -94,6 +94,16 @@ You can replace the `c` in above examples with `d` or `y` for more amazing comma
 
 Remember you can use `.` to repeat any of these command. The magic scales up! These only happen in Normal Mode, so get out of Insert Mode as soon as possible.
 
+### Macros
+
+Record a series of commands and store to a to z and play it anywhere. For example:
+
+1. `qd`	start recording to register d.
+2. ...	your complex series of commands.
+3. `q`	stop recording.
+4. `@d`	execute your macro.
+5. `@@`	execute your macro again.
+
 ### Insert text in multiple line
 
 `Ctrl-v` to select the lines in Visual Mode and then `I` to insert.
