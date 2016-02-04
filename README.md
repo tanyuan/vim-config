@@ -18,7 +18,7 @@ Note these are hidden files and you might not see them after download.
 
 `ls -a` in Bash to see hidden files.
 
-### .vimrc 
+### .vimrc
 
 My settings are mainly to work more smoothly in subtle ways. To keep important keys close to reach (the home row), I map `Caps Lock` to `Ctrl` in my operating system and map `Tab` to `Esc` in Vim. (This is the [original keyboard layout](https://en.wikipedia.org/wiki/File:KB_Terminal_ADM3A.svg) back in time when Vi is designed)
 
@@ -32,7 +32,7 @@ You can read my [.vimrc](.vimrc) with comments in the file to get what you need.
 
 The folder contains several subfolders:
 
-- **colors**: Vim color themes, including syntax highlighting. 
+- **colors**: Vim color themes, including syntax highlighting.
     - Monokai: Original Monokai theme, which is default theme in Sublime Text.
     - Monokai-Arc: I change the background to fit Arch theme.
 - **doc**: documents for plugins.
@@ -40,7 +40,6 @@ The folder contains several subfolders:
     - css.vim: Better indentation for CSS.
 - **plugin**: plugins.
     - [NERD\_commenter](http://www.vim.org/scripts/script.php?script_id=1218): Easy commenting by `<Leader>c<Space>`. I map it to `Ctrl-/` in `.vimrc`.
-    - [AutoClose](http://www.vim.org/scripts/script.php?script_id=1849): Automatic add corresponding closing brace when typing `(` `[` `{`. Jump out of nested braces by typing `)`.
 - **syntax**: language syntax highlighting.
     - c.vim/cpp.vim: function highlighting for C/C++.
     - gnuplot.vim: syntax highlighting for gnuplot files
@@ -49,11 +48,11 @@ The folder contains several subfolders:
 
 For first time users, run `vimtutor` command to learn by doing.
 
-For some important concepts, read [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html).
+A must read: [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html).
 
 Search [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki) for all kinds of nice tutorials and advice.
 
-## Using Vim 
+## Using Vim
 
 Some tips I find most useful:
 
@@ -81,7 +80,7 @@ Delete `d`, yank (copy) `y` and change (replace) `c` are the main power of Vim's
 
 `c$` to change the rest of the line.
 
-`c%` to change until the closing brace like ), ], }. 
+`c%` to change until the closing brace like ), ], }.
 
 `ciw` (change in word) to replace the word.
 
@@ -95,9 +94,11 @@ Remember you can use `.` to repeat any of these command. The magic scales up! Th
 
 `Ctrl-v` to select the lines in Visual Mode and then `I` to insert.
 
-This might be useful but maybe the `.` thing is more powerful after all.
+This might be useful but maybe the `.` thing is more powerful or use macros.
 
 ### Indentation
+
+`==` to align indentation the current line.
 
 `>aB` to indent a block by {}.
 
@@ -121,9 +122,9 @@ Vim has its clipboard history to store all your copy called registers. And you c
 
 `:regs` to list all registers.
 
-`"ay` to yank the selection to register a. (I map `'` to `"` for quick simple tap) 
+`"ay` to yank the selection to register a. (I map `'` to `"` for quick simple tap)
 
-`"ap` to put (paste) register a. 
+`"ap` to put (paste) register a.
 
 `"0p` to put (paste) the last yank.
 
@@ -139,7 +140,7 @@ You can set marks (bookmarks) at any place by the name of a to z like registers.
 
 `ma` to mark current cursor position as mark a.
 
-``a` to jump to mark a.
+`` `a`` to jump to mark a.
 
 `Ctrl-o` to jump back. (I lose `Ctrl-i` to jump forward because I map `Tab` to `Esc`. For Vim `Ctrl-i` equals to `Tab`)
 
@@ -153,7 +154,7 @@ You can set marks (bookmarks) at any place by the name of a to z like registers.
 
 Press `Ctrl-n` (next) and `Ctrl-p` (previous) to autocomplete words, though I usually type the whole thing by myself.
 
-## Beyond Vim 
+## Beyond Vim
 
 This is the environment I work in with Vim if you would like to know:
 
