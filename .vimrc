@@ -90,12 +90,18 @@ map <C-l> <C-w>l
 " Map comma to Leader
 nmap , <Leader>
 vmap , <Leader>
+" Quick save
+nmap <Leader>w :w<CR>
+" Quick quit
+nmap <Leader>q :q<CR>
 " Toggle Tab/Space by Ctrl+t
-nmap <leader>t :set expandtab!<CR>
+nmap <Leader>t :set expandtab!<CR>
 " Toggle highlight search by Ctrl+h
 nmap <Leader>h :set hlsearch!<CR>
 " Put in new line
 nmap <Leader>p o<Esc>p
+" Enter new line with additional blank line below
+nmap <Leader><CR> o<Esc>O
 
 " Remember last cursor position
 augroup resCur
