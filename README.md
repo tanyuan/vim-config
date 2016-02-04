@@ -6,9 +6,13 @@
 
 ## Philosophy
 
-I was born in a graphical user interface age and Vim is really a new way of thinking for me. The Normal Mode and Insert Mode is nothing I have ever thought of. That is what makes Vim so different and attractive. You navigate codes with sequential key strokes, not the shortcut that you have to press several keys simultaneously (chord). It feels more natural. It feels more like talking.
+I was born in a graphical user interface age and Vim is a new way of thinking for me.
 
-The configuration (settings) of my Vim is actually very simple. There are no fancy status bars and split window plugins around. I like Vim for its modest visual appearance. Vim does not tell you to do anything, thus you will think what you need to do for yourself. It is like making a friend.
+The interaction with Vim is really unique and feel like talking. I have never thought of the concept of Normal Mode and Insert Mode. This is what makes Vim so different and attractive. You navigate codes with sequential key strokes, not the shortcut that you have to press several keys simultaneously (chord). It feels more natural. I even talk to myself when pressing the shortcuts.
+
+The configuration (settings) of my Vim is very simple. There are no fancy status bars and split window plugins around. I like Vim for its modest visual appearance. Vim does not tell you to do anything. You think what you need to do for yourself. Each time you learn some new tricks. It is like making a friend.
+
+I use Vim for C++, Python and Processing most of the time.
 
 ## How to use my configuration
 
