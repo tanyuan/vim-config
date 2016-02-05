@@ -49,11 +49,13 @@ The folder contains several subfolders:
 
 ## Learn Vim
 
-For first time users, run `vimtutor` command to learn by doing.
+* First time users: run `vimtutor` command to learn by doing.
 
-A must read: [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html).
+* A must read on motivation: [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html).
 
-Search [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki) for all kinds of nice tutorials and advice.
+* A structured overview for setup and usage: [vim-galore](https://github.com/mhinz/vim-galore).
+
+* Still need help: search with keyword `vim` and you can find all kinds of answers. [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki) is often at the top search results and it provides good answer to the smallest problem you have.
 
 ## Using Vim
 
