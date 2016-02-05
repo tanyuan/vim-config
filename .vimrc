@@ -5,7 +5,7 @@ filetype plugin on
 syntax on
 
 " Use color scheme from ~/.vim/color/
-colorscheme monokai-arc
+colorscheme monokai
 
 " Show the keystrokes being entered in the screen
 set showcmd

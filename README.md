@@ -36,9 +36,8 @@ You can read my [.vimrc](.vimrc) with comments in the file to get what you need.
 
 The folder contains several subfolders:
 
-- **colors**: Vim color themes, including syntax highlighting.
-    - Monokai: Original Monokai theme, which is default theme in Sublime Text.
-    - Monokai-Arc: I change the background to fit Arch theme.
+- **colors**: Vim color themes (interface and syntax highlighting).
+    - Monokai: Monokai theme with transparent background. This is default theme in Sublime Text.
 - **doc**: documents for plugins.
 - **indent**: language indent rules.
     - css.vim: Better indentation for CSS.
@@ -175,7 +174,7 @@ This is the environment I work in with Vim if you would like to know:
 - Operating System: [Arch Linux](https://www.archlinux.org/)
 - Desktop Environment: GNOME
 - Terminal Emulator: GNOME Terminal
-- GTK+ Theme: [Arc Theme](https://github.com/horst3180/Arc-theme) (best with `monokai-arc` Vim theme)
+- GTK+ Theme: [Arc Theme](https://github.com/horst3180/Arc-theme)
 - Terminal font: [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
 
 I also had `vim-gnome` installed for better GNOME integration (system copy-paste and terminal window title). For more information on Vim packages on Arch Linux, see [Arch Linux Wiki](https://wiki.archlinux.org/index.php/Vim).
