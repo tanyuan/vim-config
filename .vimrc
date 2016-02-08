@@ -136,6 +136,12 @@ if v:version >= 700
     autocmd BufEnter * call AutoRestoreWinView()
 endif
 
+" Use GitHub-flavored Markdown syntax highlighting by default for .md files
+augroup markdown
+    au!
+    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END
+
 " For GVIM
 set guioptions-=T  " remove toolbar
 set guifont=Monospace\ 11 " set font size

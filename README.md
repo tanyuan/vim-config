@@ -45,6 +45,7 @@ The folder contains several subfolders:
     - [NERD\_commenter](http://www.vim.org/scripts/script.php?script_id=1218): Easy commenting by `<Leader>c<Space>`. I map it to `Ctrl-/` in `.vimrc`.
 - **syntax**: language syntax highlighting.
     - c.vim/cpp.vim: function highlighting for C/C++.
+    - ghmarkdown.vim: GitHub-flavored Markdown highlighting. (needs to turn on by default in `.vimrc`)
     - gnuplot.vim: syntax highlighting for gnuplot files
 
 ## Learn Vim
