@@ -1,3 +1,13 @@
+" Vim Config by tanyuan
+" =====================
+" http://github.com/tanyuan/vim-config
+"  _
+" | |_ __ _ _ __  _   _ _   _  __ _ _ __
+" | __/ _` | '_ \| | | | | | |/ _` | '_ \
+" | || (_| | | | | |_| | |_| | (_| | | | |
+"  \__\__,_|_| |_|\__, |\__,_|\__,_|_| |_|
+"                 |___/
+
 " Load plugins
 filetype plugin on
 
@@ -12,6 +22,10 @@ set showcmd
 
 " Show line numbers
 set number
+
+" Set status line with vim-fugitive plugin to show git branch
+" Status line won't show up if only one window
+set statusline=%<%f\ %{fugitive#statusline()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " Enable switching buffers with unsaved changes
 set hidden
@@ -57,15 +71,15 @@ vnoremap k gk
 " AVOID SHIFT KEY
 " =================================
 " Single tap to trigger command-line
-nmap ; :
-vmap ; :
+nnoremap ; :
+vnoremap ; :
 " Single tap to trigger register
-nmap ' "
+nnoremap ' "
 
 " SPECIAL KEY
 " =================================
-" Space to switch to next buffer
-nmap <Space> :bn<CR>
+" Switch to next buffer
+nmap \ :bn<CR>
 
 " Use [[ ]] to go to previous/next function in C/C++
 "   with brackets {} not starting at first column
@@ -87,9 +101,10 @@ map <C-l> <C-w>l
 
 " LEADER KEY
 " =================================
-" Map comma to Leader
-nmap , <Leader>
-vmap , <Leader>
+" Map Space to Leader
+let mapleader=" "
+" Reload Vim config
+nmap <Leader>r :source ~/.vimrc<CR>
 " Quick save
 nmap <Leader>w :w<CR>
 " Quick quit
@@ -102,6 +117,10 @@ nmap <Leader>h :set hlsearch!<CR>
 nmap <Leader>p o<Esc>p
 " Enter new line with additional blank line below
 nmap <Leader><CR> o<Esc>O
+" CtrlP plugin, use this instead of :e for fuzzy search
+nmap <Leader>f :CtrlP<CR>
+" Insert Bash script beginning
+nmap <Leader>b :r ~/Templates/bash.sh<CR>ggdd
 
 " Remember last cursor position
 augroup resCur
@@ -141,7 +160,3 @@ augroup markdown
     au!
     au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
-
-" For GVIM
-set guioptions-=T  " remove toolbar
-set guifont=Monospace\ 11 " set font size
