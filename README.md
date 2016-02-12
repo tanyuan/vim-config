@@ -1,38 +1,42 @@
 # Tanyuan using Vim
 
-[Vim](http://www.vim.org/) is a free and open source code editor from the old days.
+[Vim](http://www.vim.org/) is a free and open source terminal code editor from the old days.
 
 ![Vim Screenshot](screenshot.png)
 
 ## Philosophy
 
-I was born in a graphical user interface age and Vim is a new way of thinking for me.
+* I was born in a graphical user interface age and Vim is a new way of thinking for me.
 
-The interaction with Vim is really unique and feel like talking. I have never thought of the concept of Normal Mode and Insert Mode. This is what makes Vim so different and attractive. You navigate codes with sequential key strokes, not the shortcut that you have to press several keys simultaneously (chord). It feels more natural. I even talk to myself when pressing the shortcuts.
+* The interaction with Vim is really unique and it feels like talking. I have never thought of the concept of Normal Mode and Insert Mode. This is what makes Vim so different and attractive. You navigate codes with sequential key strokes, not the shortcut that you have to press several keys simultaneously (chord). It feels more natural.
 
-The configuration (settings) of my Vim is very simple. There are no fancy status bars and split window plugins around. I like Vim for its modest visual appearance. Vim does not tell you to do anything. You think what you need to do for yourself. Each time you learn some new tricks. It is like making a friend.
+* Using Vim is a progress of learning a language. You learn some verbs and some nouns, then you can combine yourself. There's no perfect Vim, every one builds their own Vim through time.
 
-I use Vim for C++, Python and Processing most of the time.
+* The configuration (settings) of my Vim is very simple. There are no fancy status bars and split window plugins around. I like Vim for its modest visual appearance.
+
+* I mainly use Vim for C++, Python and Processing most of the time.
 
 ## How to use my configuration
 
-Put folder `.vim` and file `.vimrc` under home directory `~` on Linux.
+* Put folder `.vim` and file `.vimrc` under home directory `~` on Linux. Note that they should be **dotfiles** (hidden files), so you need to rename the file and directory with a dot `.` in front of it.
 
-Note these are hidden files and you might not see them after download.
+* It is better to build your own Vim one line by one line from scratch, rather than copy others' configuration. This way you learn how Vim really works.
 
-`ls -a` in Bash to see hidden files.
+### vimrc
 
-### .vimrc
+* Read my [vimrc](vimrc) with comments in the file to get what you need. It is important that **don't put any lines in your vimrc that you don't understand.**
 
-My settings are mainly to work more smoothly in subtle ways. To keep important keys close to reach (the home row), I map `Caps Lock` to `Ctrl` in my operating system and map `Tab` to `Esc` in Vim. (This is the [original keyboard layout](https://en.wikipedia.org/wiki/File:KB_Terminal_ADM3A.svg) back in time when Vi is designed)
+* To keep important keys close to reach (the home row), I map `Caps Lock` to `Ctrl` in my operating system and map `Tab` to `Esc` in Vim. (This is the [original keyboard layout](https://en.wikipedia.org/wiki/File:KB_Terminal_ADM3A.svg) back in time when Vi is designed)
 
-Read [Avoid the escape key](http://vim.wikia.com/wiki/Avoid_the_escape_key) for more solutions and trade-offs.
+* Read [Avoid the escape key](http://vim.wikia.com/wiki/Avoid_the_escape_key) for more solutions and trade-offs.
 
-I use `Space` to quickly switch in buffers. And the greatest of all, mapping `;` to `:` to trigger Command Mode in a single key stroke on modern keyboards.
+* Map `;` to `:` to trigger Command Mode in a single key stroke on modern keyboards.
 
-You can read my [.vimrc](.vimrc) with comments in the file to get what you need.
+* Map `Space` to `Leader` to trigger customized shortcut more conveniently. Commonly used commands are set with a Leader shortcut, like `Leader-w` for `:w` to save the file.
 
-### .vim/
+* Map `\` to change to next buffer `:bn` to quickly change between buffers.
+
+### vim/
 
 The folder contains several subfolders:
 
@@ -42,10 +46,15 @@ The folder contains several subfolders:
 - **indent**: language indent rules.
     - css.vim: Better indentation for CSS.
 - **plugin**: plugins.
-    - [NERD\_commenter](http://www.vim.org/scripts/script.php?script_id=1218): Easy commenting by `<Leader>c<Space>`. I map it to `Ctrl-/` in `.vimrc`.
+    - [NERD\_commenter.vim](http://www.vim.org/scripts/script.php?script_id=1218): Easy commenting by `<Leader>c<Space>`. I map it to `Ctrl-/` in `.vimrc`.
+    - [fugitive.vim](https://github.com/tpope/vim-fugitive): Git integration, like show current branch. `:Gstatus` to show git status.
+    - [CtrlP.vim](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file finder to replace `:e`. I map to `Leader-f`.
+    - [surround.vim](https://github.com/tpope/vim-surround): Edit parentheses, brackets, quotes more easily. `ds[` to remove `[`. `ysiw[` to surround with `[`.
+    - [matchit.vim](http://www.vim.org/scripts/script.php?script_id=39): For HTML, match tags with `%`.
+    - [closetag.vim](http://www.vim.org/scripts/script.php?script_id=13): For HTML, close tags with `Ctrl-_`.
 - **syntax**: language syntax highlighting.
     - c.vim/cpp.vim: function highlighting for C/C++.
-    - ghmarkdown.vim: GitHub-flavored Markdown highlighting. (needs to turn on by default in `.vimrc`)
+    - [ghmarkdown.vim](https://github.com/jtratner/vim-flavored-markdown): GitHub-flavored Markdown highlighting. (needs to turn on by default in `.vimrc`)
     - gnuplot.vim: syntax highlighting for gnuplot files
 
 ## Learn Vim
@@ -56,7 +65,7 @@ The folder contains several subfolders:
 
 * A structured overview for setup and usage: [vim-galore](https://github.com/mhinz/vim-galore).
 
-* Still need help: search with keyword `vim` and you can find all kinds of answers. [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki) is often at the top search results and it provides good answer to the smallest problem you have.
+* More: search with keyword `vim` and you can find all kinds of answers.
 
 ## Using Vim
 
@@ -124,11 +133,11 @@ This might be useful but maybe the `.` thing is more powerful or use macros.
 
 I like buffers more than tabs for buffers don't take up screen space, leaving the screen uncluttered and less distraction.
 
-`:e FILENAME` to open a new buffer.
+`:e FILENAME` to open a new buffer. Use `:CtrlP` plugin to use fuzzy finder.
 
 `:ls` to list current buffers.
 
-`:bn` to switch to the next buffer. (I map `Space` to this enabling super fast switching)
+`:bn` to switch to the next buffer. (I map `\` to this enabling super fast switching)
 
 Read [Vim Tab Madness. Buffers vs Tabs](https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/) for more.
 
@@ -168,7 +177,7 @@ You can set marks (bookmarks) at any place by the name of a to z like registers.
 
 ### Autocomplete word
 
-Press `Ctrl-n` (next) and `Ctrl-p` (previous) to autocomplete words, though I usually type the whole thing by myself.
+Press `Ctrl-n` (next) and `Ctrl-p` (previous) to autocomplete words. Though I usually type the whole thing by myself.
 
 ## Beyond Vim
 
